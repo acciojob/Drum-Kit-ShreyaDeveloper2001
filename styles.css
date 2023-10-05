@@ -1,1 +1,51 @@
 /*  your css code here. If applicable */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #333;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    max-width: 800px;
+    transition: all 0.1s;
+}
+
+.key {
+    border: 0.4rem solid #333;
+    margin: 1rem;
+    padding: 1rem 0.5rem;
+    transition: transform 0.05s;
+    width: 10rem;
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.4);
+    text-shadow: 0 0 0.5rem black;
+}
+
+kbd {
+    display: block;
+    font-size: 1.5rem;
+}
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 1rem #ffc600;
+}
+
+audio {
+    display: none;
+}
